@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+body{
+  background-color:#1d1f20; 
+  font-family:'Ubuntu', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body, html{ 
+  height:100%;
+  width:100%;
+  padding:0;
+  margin:0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{ 
+  max-width:300px;
+  width:100%;
+  overflow:hidden;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-right:-50%;
+  transform:translate(-50%, -50%);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.size{
+  width:300px;
+  height:700px;
+  border-radius: 15px;
+}
+.style{
+  background-image:none;
+  text-align:center;
+  background-color:#303030;
+  color:white;
+  overflow:hidden; 
+}
+img{
+  width:300px;
+  height:210px;
+}
+.name-txt{
+  position:absolute;
+  top:235px;
+  padding: 18px;
+  font-size:3.5vh;
+  font-weight:600;
+  letter-spacing:-0.010em;
+  text-transform:uppercase;
+}
+small {
+  color:chocolate;
+}
+.all-button{
+  position: absolute;
+  top:275px;
+  padding: 10px 10px;
+  cursor:pointer;
+  display:block;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.button1{
+  width:125px;
+  margin: 8px 9px;
+  height:40px;
+  padding:10px 10px 10px 10px;
+  background-color:rgba(90, 90, 219, 0.863);
+  border:none;
+  border-radius:10px;
+  outline:0;
+}
+.button2{
+  width:125px;
+  margin: 8px 9px;
+  height:40px;
+  padding:10px 10px 10px 10px;
+  background-color:white;
+  border:none;
+  border-radius:10px;
+  outline:0;
+}
+i{
+  text-transform:uppercase;
+  color:black;
+	letter-spacing: 0.05em;
+}
+.about{
+  position: relative;
+  top: 100px;
+}
+.about > h4 {
+  text-align: left;
+  padding-left: 25px;
+}
+.about > small {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.interest{
+  position: relative;
+  top: 120px;
+}
+.interest > h4 {
+  text-align: left;
+  padding-left: 25px;
+}
+.interest > small {
+  color: white;
+}
+footer{
+  position: relative;
+  top: 150px;
+  background-color: black;
+  padding: 16px;
+}
+footer > i {
+  color: white;
+  font-size: 25px;
+  letter-spacing: 28px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
